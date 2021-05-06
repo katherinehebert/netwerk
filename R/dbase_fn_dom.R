@@ -13,9 +13,9 @@ dbase_fn = function(L) {
   # check if it's a square matrix
   # if(nrow(L) != ncol(L)) stop("That is not a square!")
   # this can also be done as such:
-  stopifnot(nrow(L) == ncol(L))
+  #stopifnot(nrow(L) == ncol(L))
   # also as such
-  # assertthat::assert_that(nrow(L) == ncol(L))
+  assertthat::assert_that(nrow(L) == ncol(L))
 
   NS = nrow(L)
 
