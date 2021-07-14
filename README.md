@@ -37,3 +37,5 @@ x <- matrix(1, 2, 2)
 matrix_sum(x)
 #> [1] 4
 ```
+
+### Contributors
