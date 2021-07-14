@@ -1,0 +1,23 @@
+- name: Auto-add contributors
+  # You may pin to the exact commit or the version.
+  # uses: BobAnkh/add-contributors@f2296872426a5a36168cdf73691035a3da5df4f1
+  uses: BobAnkh/add-contributors@v0.0.8
+  with:
+    # The name of the repo: user/repo_name
+    REPO_NAME: katherinehebert/netwerk
+    # Where you want to add contributors
+    CONTRIBUTOR: # optional, default is ### Contributors
+    # Number of contributors per row
+    COLUMN_PER_ROW: # optional, default is 6
+    # Github Access Token you want to use. Just pass GITHUB_TOKEN
+    ACCESS_TOKEN: GITHUB_TOKEN
+    # Width of img
+    IMG_WIDTH: # optional, default is 100
+    # Font size of name (px)
+    FONT_SIZE: # optional, default is 14
+    # Path to the file you want to add contributors' list. You can use <branch>:<file> format to specify the branch
+    PATH: # optional, default is /README.md
+    # Commit message
+    COMMIT_MESSAGE: # optional, default is docs(README): update contributors
+    # Set `round` for round avatar and `square` for square avatar
+    AVATAR_SHAPE: # optional, default is square
